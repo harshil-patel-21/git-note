@@ -1,0 +1,117 @@
+- Git is a version control system.
+
+- Git helps you keep track of code changes.
+
+
+IT IS USED FOR:
+- Tracking code changes
+- Tracking who made changes
+- Coding collaboration
+
+
+WHAT DOES GIT DO?
+- Manage projects with Repositories
+- Clone a project to work on a local copy
+- Control and track changes with Staging and Committing
+- Branch and Merge to allow for work on different parts and versions of a project
+- Pull the latest version of the project to a local copy
+- Push local updates to the main project
+- Working with Git
+
+
+WORKING WITH GIT
+- Initialize Git on a folder, making it a Repository
+- Git now creates a hidden folder to keep track of changes in that folder
+- When a file is changed, added or deleted, it is considered modified
+- You select the modified files you want to Stage
+- The Staged files are Committed, which prompts Git to store a permanent snapshot of the files
+- Git allows you to see the full history of every commit.
+- You can revert back to any previous commit.
+- Git does not store a separate copy of every file in every commit, but keeps track of changes made in each commit!
+
+
+Files in your Git repository folder can be in one of 2 states:
+
+-- Tracked - files that Git knows about and are added to the repository
+-- Untracked - files that are in your working directory, but not added to the repository
+
+When you first add files to an empty repository, they are all untracked. 
+To get Git to track them, you need to stage them, or add them to the staging environment.
+
+
+WORKING WITH GIT BRANCHES
+- In Git, a branch is a new/separate version of the main repository.
+- Branches allow you to work on different parts of a project without impacting the main branch.
+
+
+
+---------------------------------git commands---------------------------------------------------------------------------------------------------------------
+
+
+- git config --global user.name       (to configur name,Use global to set the username and e-mail for every repository)
+
+- git config --global user.email       (to configur email,Use global to set the username and e-mail for every repository)
+
+- code .       (open code editer)
+
+- mkdir myproject       (will create new folder for projects)
+
+- cd myproject       (change the current working directry)
+
+- git init       (Initialized empty Git repository in /Users/user/myproject/.git/)
+
+- ls       (will list the files in the directory)
+
+- ls -lart       (will list all the hidden files)
+
+- git status       (to check the status of files)
+
+- git status --short       (short hand, to see status in short)
+
+- git status -s       (short hand, to see status in short)
+
+- git add <file name>       (will add file to staging environment)
+
+- git rm <fileName>       (it will delete the file from working directory)
+
+- git rm --cached <filename>       (to remove file from staging area)
+
+- git add --all       (will all the file to staging environment) 
+
+- git add -A       (short hand of git add --all)
+
+- git commit -a -m "update in index.html with one line"       (to commit directly and skipping the staging)
+
+- git commit -m "message"       (commit all files with commit message)
+
+- git log       (To view the history of commits for a repository)
+
+- git log -p -3       (to see last 3 commit also it will show all the changes done)
+
+- git branch hello-world-image       (create a new branch with name hello-world-image)pwd
+
+- git branch       (list the Branches)      
+
+- git checkout -b emergency-fix       (Using the -b option on checkout will create a new branch, and move to it, if it does not exist)
+
+- git merge emergenct-fix       (it will merge with master branch)
+
+- git branch -d emergency-fix       (it will delete the emergenct-fix branch)
+
+- git diff       (compare working tree with staging area) 
+
+- git diff --staged       (compare staging area with last commit)
+
+- git checkout <filename>       (will match file with previous commit)
+
+- git checkout -f       (will match all the files with last commit)
+
+- git remote add origin https://github.com/w3schools-test/hello-world.git       (specifies that you are adding a remote repository, with the specified URL, as an origin to your local Git repo)
+
+- git push --set-upstream origin master       (to push local repository to origin)
+
+- git fetch origin       (fetch gets all the change history of a tracked branch/repo. So, on your local Git, fetch updates to see what has changed on GitHub:)
+
+- git merge origin       (merge combines the current branch, with a specified branch.)
+
+- git pull origin       (pull is a combination of fetch and merge. It is used to pull all changes from a remote repository into the branch you are working on.)
